@@ -1,18 +1,20 @@
 export default function GeneralInformation(props) {
-  function submitGenralInfo(event) {
+  function submitGeneralInfo(event) {
     event.preventDefault();
     const formData= new FormData(event.target);
     const userName = formData.get("userName");
     const userContact = formData.get("userContact");
     const userMail = formData.get("userMail");
-     
-    const generalInfo={name:userName,contact:userContact, email:userMail};
-    props.setGeneralInfo([generalInfo]);
+    const userLocation=formData.get("userLocation")
+
+    const generalInfo={name:userName,contact:userContact, email:userMail, location:userLocation};
+    console.log(generalInfo);
+    props.setGeneralInfo(generalInfo);
   }
 
   return (
-    <div className='genenalInformationForm'>
-      <form onSubmit={submitGenralInfo}>
+    <div className='generalInformationForm'>General Information
+      <form onSubmit={submitGeneralInfo}>
         <label htmlFor='name'>
           Full Name:
           <input type='text' id='name' name='userName' />
@@ -24,6 +26,10 @@ export default function GeneralInformation(props) {
         <label htmlFor='email'>
           Email:
           <input type='text' id='email' name='userMail' />
+        </label>
+        <label htmlFor='location'>
+          Location:
+          <input type='text' id='location' name='userLocation' />
         </label>
         <button type='submit'>Add</button>
       </form>

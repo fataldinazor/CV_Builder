@@ -4,15 +4,15 @@ import Information from "./components/Information";
 import Preview from "./components/Preview";
 
 function App() {
-  const [generalInfo, setGeneralInfo] = useState([]);
+  const [generalInfo, setGeneralInfo] = useState({});
   const [educationInfo, setEducationInfo] = useState([]);
   const [experienceInfo, setExperienceInfo] = useState([]);
   return (
     <div className="app">
       <Information
         setGeneralInfo={setGeneralInfo}
-        setEducation={setEducationInfo}
-        setExperience={setExperienceInfo}
+        setEducationInfo={setEducationInfo}
+        setExperienceInfo={setExperienceInfo}
       />
       <Preview
         generalInfo={generalInfo}
