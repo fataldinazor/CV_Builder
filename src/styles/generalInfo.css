@@ -1,0 +1,74 @@
+.generalInfoDiv{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    gap:15px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(63, 63, 63);
+}
+
+.generalInfoHeading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.generalInfoTitle{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display:flex;
+}
+
+.generalInfoTitle>div{
+    margin:0 10px;
+}
+
+.generalInfoForm{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.generalInfoForm>label{
+    display: flex;
+    flex-direction: column;
+    font-weight:600;
+}
+
+.editGeneralInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.givenGeneralInfoBlock{
+    font-size: 0.8rem;
+}
+
+.name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.editBtn{
+    width:70px;
+    height: 50px;
+    align-self: center;
+}
+
+.editBtn:hover{
+    background-color: rgb(75, 74, 74);
+}
+
+input{
+    border:0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    width:100px;
+}
+

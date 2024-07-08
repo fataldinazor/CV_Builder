@@ -1,5 +1,9 @@
 .previewDiv {
-  width: 50%;
+  background-color: #c0c0c0;
+  position:fixed;
+  top:0;
+  z-index:100;
+  width: 45%;
   height: 100vh;
   right:0;
   background-color: rgb(47, 47, 47);
@@ -19,14 +23,14 @@
 
 .generalInfoPreview{
   height:15%;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .generalInfoPreview>.name{
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
@@ -42,18 +46,21 @@
 .educationInfoPreview{
   display:flex;
   flex-direction: column;
+  padding:0 10px;
+  margin-top:10px;
 }
 
 .educationHeadingPreview{
   font-size: 1.5rem;
   font-weight: 700;
   border-bottom: 2px solid black;
+  margin-bottom: 5px;
 }
 
 .educationInfos{
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:15px;
 }
 
 .educationInfoBlock{
@@ -73,22 +80,26 @@
 
 .degreeDates{
   justify-self:end;
+  font-size:1rem;
+  font-weight: 600;
 }
 
 .location{
   justify-self: end;
 }
 
-.ExperienceInfoPreview{
+.experienceInfoPreview{
   display: flex;
   flex-direction: column;
-  
+  padding:0 10px;
+  margin:10px 0;
 }
 
 .experienceHeadingPreview{
   font-size: 1.5rem;
   font-weight: 700;
   border-bottom: 2px solid black;
+  margin-bottom: 5px;
 }
 
 .experienceInfos{
@@ -110,6 +121,8 @@
 
 .jobDates{
   justify-self: end;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .jobDescription{
